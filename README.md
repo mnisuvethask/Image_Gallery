@@ -30,10 +30,148 @@ Validate the HTML and CSS code
 Publish the website in the given URL.
 
 ## PROGRAM
+GALLERY.HTML:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
 
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
 
+    <h1>Interactive Photo Gallery</h1>
+
+    <div class="gallery-container">
+
+        <button class="btn" onclick="prevImage()">❮</button>
+
+        <div class="gallery">
+
+            <img src="images/img1.png" class="gallery-img active">
+            <img src="images/img2.png" class="gallery-img">
+            <img src="images/img3.png" class="gallery-img">
+            <img src="images/img4.png" class="gallery-img">
+            <img src="images/img5.png" class="gallery-img">
+
+        </div>
+
+        <button class="btn" onclick="nextImage()">❯</button>
+
+    </div>
+
+    <script src="gallery.js"></script>
+
+</body>
+</html>
+```
+GALLERY.CSS:
+```
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+h1{
+    margin-top:20px;
+    font-size:45px;
+    color:#222;
+}
+
+.gallery-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
+}
+
+.gallery{
+    width:700px;
+    height:450px;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.3);
+    background:white;
+}
+
+.gallery-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:none;
+}
+
+.gallery-img.active{
+    display:block;
+}
+
+.btn{
+    background:#222;
+    color:white;
+    border:none;
+    padding:15px 22px;
+    font-size:30px;
+    border-radius:50%;
+    cursor:pointer;
+    margin:20px;
+}
+
+.btn:hover{
+    background:orange;
+}
+```
+GALLERY.JS:
+```
+let images = document.querySelectorAll(".gallery-img");
+
+let current = 0;
+
+function showImage(index){
+
+    images.forEach((img)=>{
+        img.classList.remove("active");
+    });
+
+    images[index].classList.add("active");
+}
+
+function nextImage(){
+
+    current++;
+
+    if(current >= images.length){
+        current = 0;
+    }
+
+    showImage(current);
+}
+
+function prevImage(){
+
+    current--;
+
+    if(current < 0){
+        current = images.length - 1;
+    }
+
+    showImage(current);
+}
+
+setInterval(()=>{
+    nextImage();
+},3000);
+```
 ## OUTPUT
-
-
+![alt text](<Screenshot 2026-05-25 141641.png>)
+![alt text](<Screenshot 2026-05-25 141653.png>)
+![alt text](<Screenshot 2026-05-25 141703.png>)
+![alt text](<Screenshot 2026-05-25 141753.png>)
+![alt text](<Screenshot 2026-05-25 141816.png>)
 ## RESULT
   The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.

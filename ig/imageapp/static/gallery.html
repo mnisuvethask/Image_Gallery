@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <h1>Interactive Photo Gallery</h1>
+
+    <div class="gallery-container">
+
+        <button class="btn" onclick="prevImage()">❮</button>
+
+        <div class="gallery">
+
+            <img src="images/img1.png" class="gallery-img active">
+            <img src="images/img2.png" class="gallery-img">
+            <img src="images/img3.png" class="gallery-img">
+            <img src="images/img4.png" class="gallery-img">
+            <img src="images/img5.png" class="gallery-img">
+
+        </div>
+
+        <button class="btn" onclick="nextImage()">❯</button>
+
+    </div>
+
+    <script src="gallery.js"></script>
+
+</body>
+</html>
