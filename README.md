@@ -30,6 +30,7 @@ Validate the HTML and CSS code
 Publish the website in the given URL.
 
 ## PROGRAM<!DOCTYPE html>
+'''
 <html>
 <head>
     <title>Interactive Photo Gallery</title>
@@ -150,6 +151,7 @@ function prevImage(){
 setInterval(() => {
     nextImage();
 }, 3000);
+'''
 ## OUTPUT
 <img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/76dfb2c8-527a-4ed7-bb95-61b0c3ba8075" />
 <img width="1920" height="1080" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/a60cb05d-c35e-4850-bb94-ebbda0dfc032" />
