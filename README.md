@@ -65,6 +65,7 @@ Publish the website in the given URL.
 
 </body>
 </html>
+
 body{
     margin:0;
     padding:0;
@@ -108,7 +109,7 @@ h1{
 
 .btn{
     background:#222;
-    color:white;
+    color:yellow;
     border:none;
     padding:15px 22px;
     font-size:30px;
@@ -118,9 +119,8 @@ h1{
 }
 
 .btn:hover{
-    background:orange;
+    background:blueviolet;
 }
-
 let images = document.querySelectorAll(".gallery-img");
 
 let current = 0;
