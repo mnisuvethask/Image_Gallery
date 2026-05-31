@@ -30,6 +30,7 @@ Validate the HTML and CSS code
 Publish the website in the given URL.
 
 ## PROGRAM
+GALLERY.HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,11 +50,11 @@ Publish the website in the given URL.
 
         <div class="gallery">
 
-            <img src="C:\Users\Yazhini\WEB\softweb\vijay\calcapp\img1.png" class="gallery-img active">
-            <img src="C:\Users\Yazhini\WEB\softweb\vijay\calcapp\img2.png" class="gallery-img">
-            <img src="C:\Users\Yazhini\WEB\softweb\vijay\calcapp\img3.png" class="gallery-img">
-            <img src="C:\Users\Yazhini\WEB\softweb\vijay\calcapp\img4.png" class="gallery-img">
-            <img src="C:\Users\Yazhini\WEB\softweb\vijay\calcapp\img5.png" class="gallery-img">
+            <img src="images/img1.png" class="gallery-img active">
+            <img src="images/img2.png" class="gallery-img">
+            <img src="images/img3.png" class="gallery-img">
+            <img src="images/img4.png" class="gallery-img">
+            <img src="images/img5.png" class="gallery-img">
 
         </div>
 
@@ -66,6 +67,7 @@ Publish the website in the given URL.
 </body>
 </html>
 
+GALLERY.CSS
 body{
     margin:0;
     padding:0;
@@ -109,7 +111,7 @@ h1{
 
 .btn{
     background:#222;
-    color:yellow;
+    color:white;
     border:none;
     padding:15px 22px;
     font-size:30px;
@@ -119,9 +121,10 @@ h1{
 }
 
 .btn:hover{
-    background:blueviolet;
+    background:orange;
 }
 
+GALLERY.JS
 let images = document.querySelectorAll(".gallery-img");
 
 let current = 0;
@@ -160,7 +163,6 @@ function prevImage(){
 setInterval(()=>{
     nextImage();
 },3000);
-
 ## OUTPUT
 <img width="1920" height="1080" alt="Screenshot (51)" src="https://github.com/user-attachments/assets/76dfb2c8-527a-4ed7-bb95-61b0c3ba8075" />
 <img width="1920" height="1080" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/a60cb05d-c35e-4850-bb94-ebbda0dfc032" />
