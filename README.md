@@ -30,7 +30,7 @@ Validate the HTML and CSS code
 Publish the website in the given URL.
 
 ## PROGRAM<!DOCTYPE html>
-'''
+```
 <html>
 <head>
     <title>Interactive Photo Gallery</title>
@@ -158,7 +158,7 @@ setInterval(() => {
 <img width="1920" height="1080" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/8f3787f0-0e01-4643-be87-ea83074468a3" />
 <img width="1920" height="1080" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/3653075c-cf37-410d-ad4e-5c7ae53aba20" />
 <img width="1920" height="1080" alt="Screenshot (55)" src="https://github.com/user-attachments/assets/7b2f88ba-f53e-4b78-bd91-1746ea80c243" />
-
+```
 
 ## RESULT
   The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
