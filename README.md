@@ -30,7 +30,6 @@ Validate the HTML and CSS code
 Publish the website in the given URL.
 
 ## PROGRAM
-GALLERY.HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,8 +65,6 @@ GALLERY.HTML
 
 </body>
 </html>
-
-GALLERY.CSS
 body{
     margin:0;
     padding:0;
@@ -124,7 +121,6 @@ h1{
     background:orange;
 }
 
-GALLERY.JS
 let images = document.querySelectorAll(".gallery-img");
 
 let current = 0;
